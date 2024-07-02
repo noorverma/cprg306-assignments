@@ -16,10 +16,10 @@ export default function Page() {
 
   const handleItemSelect = (itemName) => {
     const cleanedItemName = itemName
-      .split(',')[0] // Assuming the format is "spaghetti, 1 kg"
+      .split(',')[0] 
       .replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/g, '')
       .trim();
-    console.log(`Selected item name cleaned: ${cleanedItemName}`); // Log the cleaned item name
+    console.log(`Selected item name cleaned: ${cleanedItemName}`); 
     setSelectedItemName(cleanedItemName);
   };
 
