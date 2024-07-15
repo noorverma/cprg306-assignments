@@ -27,7 +27,7 @@ export default function Page()
                     </p>
                     <p>
                           Welcome, {user.displayName} ({user.email})
-                    </p>;
+                    </p>
                     <button onClick={handleSignOut}> Sign out 
                     </button>
                     </div>
